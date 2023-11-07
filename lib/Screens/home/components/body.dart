@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_app/S&C/size_config.dart';
 import 'package:recipe_app/Screens/home/components/recipe_bundel_card.dart';
-import 'package:recipe_app/models/recibeBundel.dart';
+import 'package:recipe_app/models/recipeBundel.dart';
 import 'categories.dart';
 
 class Body extends StatelessWidget {
@@ -12,13 +12,13 @@ class Body extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          Categories(),
+          const Categories(),
           Expanded(child: 
           Padding(
             padding:  EdgeInsets.symmetric(horizontal: SizeConfig.defaultSize! * 2),
             child: GridView.builder(
               itemCount: recipeBundles.length,
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
                 gridDelegate:SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: SizeConfig.orientation==Orientation.landscape? 2: 1,
                 mainAxisSpacing: 20,

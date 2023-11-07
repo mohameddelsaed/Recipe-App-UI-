@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../S&C/size_config.dart';
-import '../../../models/recibeBundel.dart';
+import '../../../models/recipeBundel.dart';
 
 // ignore: must_be_immutable
 class RecipeBundelCard extends StatelessWidget {
@@ -27,7 +27,7 @@ class RecipeBundelCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Spacer(),
+                    const Spacer(),
                     Text(
                       recipeBundle.title,
                       style: TextStyle(
@@ -42,11 +42,11 @@ class RecipeBundelCard extends StatelessWidget {
                     ),
                     Text(
                       recipeBundle.description,
-                      style: TextStyle(color: Colors.white54),
+                      style: const TextStyle(color: Colors.white54),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    Spacer(),
+                    const Spacer(),
                     buildInfoRow(defaultSize!,
                         iconSrc: 'assets/icon/pot.svg',
                         text: '${recipeBundle.chefs} Recipes'),
@@ -54,7 +54,7 @@ class RecipeBundelCard extends StatelessWidget {
                     buildInfoRow(defaultSize!,
                         iconSrc: 'assets/icon/chef.svg',
                         text: '${recipeBundle.chefs} Chefs'),
-                    Spacer(),
+                    const Spacer(),
                   ],
                 ),
               ),
@@ -83,7 +83,7 @@ class RecipeBundelCard extends StatelessWidget {
         ),
         Text(
           text,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ],
     );

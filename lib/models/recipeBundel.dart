@@ -24,7 +24,7 @@ List<RecipeBundle> recipeBundles = [
     title: "Cook Something New Everyday",
     description: "New and tasty recipes every minute",
     imageSrc: "assets/images/cook_new@2x.png",
-    color: Color(0xFFD82D40),
+    color: const Color(0xFFD82D40),
   ),
   RecipeBundle(
     id: 2,
@@ -33,7 +33,7 @@ List<RecipeBundle> recipeBundles = [
     title: "Best of 2020",
     description: "Cook recipes for special occasions",
     imageSrc: "assets/images/best_2020@2x.png",
-    color: Color(0xFF90AF17),
+    color: const Color(0xFF90AF17),
   ),
   RecipeBundle(
     id: 3,
@@ -42,6 +42,6 @@ List<RecipeBundle> recipeBundles = [
     title: "Food Court",
     description: "What's your favorite food dish make it now",
     imageSrc: "assets/images/food_court@2x.png",
-    color: Color(0xFF2DBBD8),
+    color: const Color(0xFF2DBBD8),
   ),
 ];
